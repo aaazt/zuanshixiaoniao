@@ -1,0 +1,64 @@
+
+<view class="home-container">
+<!--头部导航栏-->
+<!--头部搜索栏-->
+<view class="home-header">
+ <view class="home-header1">根据关键词搜索</view>
+ <view class="home-header2">珠宝顾问</view>
+</view>
+<!--轮播图-->
+  <swiper class="slider" autoplay indicator-dots="red" circular="true">
+    <swiper-item wx:for="{{list}}" wx:key="id" bindtap="handle1">
+      <image src="http://127.0.0.1:3000/{{item.img}}" lazy-load="true" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+ 
+</view>
+<!--四张戒指图片-->
+ <view class='home-nav' bindtap="handle1">
+    <view class="nav-item" wx:for="{{navlist}}" wx:key="index" >
+     <image src="{{item.img}}" lazy-load mode="aspectFill" data-fid="{{item.fid}}"></image>
+      <text>{{item.fname}}</text>
+    </view>
+  </view>
+<!--隔离线-->
+  <view class="home-line">
+    <view class="home-line1"></view>
+    <view class="home-line2"></view>
+  </view>
+<!--系列产品文字-->
+  <view class="home-title1">系列产品</view>
+<!--系列产品图片5张-->
+<view class='home-picture'>
+    <view class="nav-picture" wx:for="{{picturelist}}" wx:key="index">
+     <image src="http://127.0.0.1:3000/{{item.img}}" lazy-load mode="aspectFill"></image>
+    </view>
+  </view>
+  <!--隔离线-->
+  <view class="home-line">
+    <view class="home-line1"></view>
+    <view class="home-line2"></view>
+  </view>
+<!--珠宝臻品鉴赏-->
+<!--一秒变钻石专家-->
+  <view class="home-title2">
+    <view class="home-title21">珠宝臻品鉴赏</view>
+    <view>一秒变钻石专家</view>
+  </view>
+
+<!--热卖单品文字以及背景框-->
+<view class="hot">热卖单品</view>
+<!--热卖单品图片-->
+ <view class='home-hotsingle'>
+    <view class="hot-single-item" wx:for="{{hotsinglelist}}" wx:key="index">
+     <image src="http://127.0.0.1:3000/{{item.pic1}}" lazy-load mode="aspectFill" data-pid="{{item.pid}}"></image>
+      <view class="host-word">
+      <text> {{item.title}}</text>
+      <text class="host-price">￥{{item.price}}</text>
+      </view>
+    </view>
+  </view>
+<!--右侧栏-->
+
+
+
