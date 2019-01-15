@@ -1,0 +1,42 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/*条目样式*/
+.cell{
+  background-color:#fff;
+  font-size:11px;
+}
+.cell-item{
+  padding:40rpx 30rpx;
+  border-bottom:1rpx solid #ddd;
+}
+/*通用功能--箭头*/
+.arrow{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.arrow::after{
+  content:"";
+  width:15rpx;
+  height:15rpx;
+  border-top:3rpx solid #ccc;
+  border-right:3rpx solid #bbb;
+  transform:rotate(45deg);
+
+}
+
+/*通用功能二：灰色分隔块*/
+.divider{
+  width:100%;
+  height:30rpx;
+  background-color:#eee;
+  
+}

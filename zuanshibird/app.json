@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/zuanshidetail/zuanshidetail",
+    "pages/zuanshi/zuanshi",
+    "pages/home/home",
+    "pages/car/car",
+    
+    "pages/login/login",
+    "pages/hunjie/hunjie",
+    "pages/index/index",
+    "pages/filter/filter",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "钻石小鸟",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/tabs/home.png",
+        "selectedIconPath": "pages/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "门店",
+        "iconPath": "pages/tabs/home.png",
+        "selectedIconPath": "pages/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "pages/tabs/home.png",
+        "selectedIconPath": "pages/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/filter/filter",
+        "text": "我的",
+        "iconPath": "pages/tabs/profile.png",
+        "selectedIconPath": "pages/tabs/profile-active.png"
+      }
+    ]
+  }
+}
