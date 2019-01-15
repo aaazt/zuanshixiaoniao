@@ -1,0 +1,26 @@
+<!--pages/zuanshi/zuanshi.wxml-->
+<view>
+  <!--头部图片-->
+  <view class="header-image">
+    <image src="http://127.0.0.1:3000/img-my/banner/banner-05.jpg" lazy-load="true" mode="aspecFill"></image>
+  </view>
+  
+  <!--导航栏（默认/价格/筛选）-->
+  <view class="hunjie-nav">
+    <view>默认</view>
+    <view class="hunjie-nav1">价格</view>
+    <view>筛选</view>
+  </view>
+  <!--钻石图片-->
+  <view class='home-hotsingle'>
+    <view class="hot-single-item" wx:for="{{hunjielist}}" wx:key="index">
+     <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+      <view class="host-word">
+      <text> {{item.title}}</text>
+      <text class="host-price">{{item.price}}</text>
+      </view>
+    </view>
+  </view>
+   
+  
+</view>
