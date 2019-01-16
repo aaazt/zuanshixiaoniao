@@ -1,0 +1,30 @@
+
+<view>
+  <view wx:for="{{productList}}" wx:key="index">
+    <view class="shop {{list1[index]?'active':''}}">
+      <image src="http://127.0.0.1:3000/{{item.img}}" class="shop-img" data-id="{{index}}" bindtap="select"></image>
+      <view class="shop-info">
+        <text class="shop-title ell">{{item.title}}</text>
+      </view>
+      <view class='card-right'>
+        <text class="price">￥{{item.price}}</text>
+        <text class="del" bindtap='del' data-cid="{{item.cid}}">删除</text>
+      </view>
+    </view>
+  </view>
+  <!--全选和结算  -->
+  <view class="divider5">
+  <view class='item3' wx:if="{{!select}}" >全选</view>
+  <view class='item3 active' wx:if="{{select}}" >取消全选</view>
+    <view class="item1">
+     <!-- <text>本次应付：￥{{sum1}}</text> -->
+     <text>订单总额：￥{{sum}} </text>
+    </view> 
+    <view class="item2" >结算</view>
+  </view>
+  <!--全选和结算结束  -->
+</view>
+
+
+ 
+  

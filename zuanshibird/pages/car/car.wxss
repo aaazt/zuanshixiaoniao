@@ -1,0 +1,84 @@
+/* pages/shopCard/shopCard.wxss */
+/*1:组件白色背景*/
+page{
+  background-color:#fff;
+}
+/*2:当前商品条目*/
+.shop{
+  padding:20rpx;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  position: relative
+}
+/*3:当前商品图片*/
+.shop-img{
+  width:160rpx;
+  height:160rpx;
+  margin-right:20rpx;
+}
+.shop-info{
+   width:40%;
+   color:#666;
+   display: flex;
+   flex-direction: column;
+   line-height: 1.5;
+   justify-content: center;
+}
+.shop-title{
+   font-size:16px;
+   color:#333;
+   width:280rpx;
+}
+.card-right{
+  width: 30%;
+  display: flex;
+   flex-direction: column;
+}
+.price{
+  display: block;
+  margin: 15px 0 20px 70px;
+}
+.del{
+  margin: 5px 0 0 70px;
+  font-size: 18px;
+}
+.active{
+  background: #ccc;
+}
+.divider5{
+  position: fixed;
+  top: 490px;
+  height: 80rpx;
+  background: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 33rpx;
+  color: #000;
+  width: 100%;
+}
+.item3{
+  width: 20%;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  height: 80rpx;
+}
+.item1{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20rpx;
+}
+.item1 text{
+  display: block;
+  margin: 0 0 15rpx 0;
+}
+.item2{
+  width: 30%;
+  text-align: center;
+  height: 80rpx;
+  background:rgba(231, 8, 19, 0.555);
+  line-height: 80rpx;
+}
