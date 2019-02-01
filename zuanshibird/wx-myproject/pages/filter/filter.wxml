@@ -1,0 +1,19 @@
+<!--pages/filter/filter.wxml-->
+<view class="filter-all" >
+  <!--图片-->
+  <view class="filter-image">
+    <image src="http://127.0.0.1:3000/img-my/info/info-01.jpg" lazy-load="true"  mode="aspectFill"></image>
+    <view class="filter-back"></view>
+  </view>
+  <!--列表-->
+
+
+  <view class="cell">
+    <view class="cell-item arrow">我的订单</view>
+    <view class="cell-item arrow">幸福闯关</view>
+    <view class="cell-item arrow">福利团</view>
+    <view class="cell-item arrow">我的优惠券</view>
+    <view class="cell-item arrow">我的礼品券</view>
+    <view class="cell-item arrow">我的积分</view>
+  </view>
+</view>

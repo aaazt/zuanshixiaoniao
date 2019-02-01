@@ -1,0 +1,27 @@
+
+<view class="zuanshi">
+  <!--头部钻石图片-->
+  <view class="zuanshi-image">
+    <image src="http://127.0.0.1:3000/img-my/product/lg/clg-0134.jpg"lazy-load="true" mode="aspectFill"></image>
+  </view>
+  <!--钻石介绍-->
+  <view class="zuanshi-world">
+    <view>0.30 克拉 H色 S12 梨形 钻石 </view>
+    <view class="zuanshi-price">￥2400</view>
+  </view>
+  <!--通用灰色风隔块-->
+  <view class="divider"></view>
+  <!--导航栏-->
+    <view class="zuanshi-nav">
+    <view>图文详情</view>
+    <view class="zuanshi-nav1">商品参数</view>
+    <view>商品评价</view>
+  </view>
+  <!--灰色分割线-->
+  <view class="line"></view>
+  <!--图片-->
+  <view wx:for="{{zuanshidetaillist}}" wx:key="index">
+    <image src="{{item.img}}" lazy-load="true" mode="aspectFill" ></image>
+  </view>
+  <!--tabbar-->
+</view>

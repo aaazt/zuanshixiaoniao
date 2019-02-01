@@ -1,0 +1,51 @@
+/*头部图片样式 */
+
+.header-image image{
+  width:100%;
+  height:260rpx;
+
+}
+/*两个选择项（严选规格/预定全球钻）样式 */
+.zuanshi-title1{
+  font-size:20rpx;
+  margin-left:160rpx;
+  margin-top:20rpx;
+}
+.zuanshi-title11{
+  margin:0 50rpx;
+}
+/*导航栏（钻重/价格/筛选）样式 */
+.zuanshi-nav{
+  display:flex;
+  font-size:24rpx;
+  margin-left:160rpx;
+  margin-top:30rpx;
+}
+.zuanshi-nav1{
+  
+   margin: 0 125rpx;
+}
+/*钻石图片）样式 */
+.cell-item{
+ display:flex;
+
+}
+.cell-item image{
+  width:150rpx;
+  height:150rpx;
+}
+.zuanshi-world{
+  display:flex;
+ justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:50rpx 0 0 80rpx;
+
+ 
+}
+
+.price{
+  color:#d39ea6;
+  margin-top:10rpx;
+}
+

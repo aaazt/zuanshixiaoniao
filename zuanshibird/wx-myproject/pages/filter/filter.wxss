@@ -1,0 +1,49 @@
+/* pages/filter/filter.wxss */
+/*图片样式*/
+.filter-all{
+  background-color:#eee;
+}
+
+
+.filter-back{
+  width:85%;
+  height:50rpx;
+  background-color:#fff;
+  margin-left:65rpx;
+  margin-bottom:40rpx;
+  
+}
+
+.filter-image image{
+  display:block;
+  width:85%;
+  height:270rpx;
+  border-radius:25rpx;
+  margin-left:65rpx;
+   margin-top:40rpx;
+
+}
+/*条目样式*/
+.cell{
+  background-color:#fff;
+  font-size:10px;
+}
+.cell-item{
+  padding:40rpx 30rpx;
+  border-bottom:1rpx solid #ddd;
+}
+/*通用功能--箭头*/
+.arrow{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.arrow::after{
+  content:"";
+  width:15rpx;
+  height:15rpx;
+  border-top:3rpx solid #ccc;
+  border-right:3rpx solid #bbb;
+  transform:rotate(45deg);
+
+}

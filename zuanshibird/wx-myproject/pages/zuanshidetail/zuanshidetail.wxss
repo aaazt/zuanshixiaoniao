@@ -1,0 +1,41 @@
+/* pages/zuanshidetail/zuanshidetail.wxss */
+.zuanshi , .zuanshi-world{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.zuanshi-image image{
+  width:300rpx;
+  height:300rpx;
+  margin-top:60rpx;
+}
+.zuanshi-world{
+  font-size:11px;
+  margin-top:120rpx;
+  
+}
+.zuanshi-price{
+  color:pink;
+  margin:30rpx 0;
+}
+
+/*导航栏样式*/
+.zuanshi-nav{
+  display:flex;
+  font-size:24rpx;
+  margin-left:10rpx;
+  margin:30rpx 0;
+}
+.zuanshi-nav1{
+  
+   margin: 0 150rpx;
+}
+/*分割线样式*/
+.line{
+  width:100%;
+  height:3rpx;
+  background:#eee;
+}

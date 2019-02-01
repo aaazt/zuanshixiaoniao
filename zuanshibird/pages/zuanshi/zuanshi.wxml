@@ -1,0 +1,30 @@
+<!--pages/zuanshi/zuanshi.wxml-->
+<view bindtap="handle2">
+  <!--头部图片-->
+  <view class="header-image" wx:for="{{imglist}}" wx:key="index" >
+    <image src="{{item.img}}" lazy-load="true" mode="aspectFill"></image>
+  </view>
+  <!--两个选择项（严选规格/预定全球钻）-->
+  <view class="zuanshi-title1">
+    <text>严选现货.3549颗</text>
+    <text class="zuanshi-title11">|</text>
+    <text>预定全球钻.72879颗</text>
+  </view>
+  <!--导航栏（钻重/价格/筛选）-->
+  <view class="zuanshi-nav">
+    <view>钻重</view>
+    <view class="zuanshi-nav1">价格</view>
+    <view>筛选</view>
+  </view>
+  <!--钻石图片-->
+  <view class=".cell">
+    <view  wx:for="{{zuanshilist}}" wx:key="index" class="cell-item">
+      <image src="{{item.img}}"></image>
+      <view class="zuanshi-world">
+        <view>{{item.title}}</view>
+        <view class="price">{{item.price}}</view>
+      </view>
+    </view>
+   
+  </view>
+</view>
